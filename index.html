@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TempInsight</title>
+    <link rel="stylesheet" type="text/css" href="styles/global.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="name">
+        <div id="title">TempInsight</div>
+        <img src="assets/photos/logo.png" />
+      </div>
+      <div class="container">
+        <label for="cityInput"></label>
+        <input type="text" id="cityInput" placeholder="Search your city" />
+        <button>
+          <img src="assets/photos/searchIcon.png" alt="searchButton" />
+        </button>
+
+        <ul id="cityResults"></ul>
+      </div>
+    </div>
+    <span class="loader"></span>
+    <div class="error">
+      <p>Invalid city name</p>
+    </div>
+    <div class="weatherCard">
+      <div class="fav">
+        <h1 class="city">Bucharest</h1>
+        <button id="addToFavorites">
+          <img src="assets/photos/favourites.png" alt="favoritesButton" />
+        </button>
+        <ul id="favoriteCities"></ul>
+      </div>
+      <h2 class="temp">0°C</h2>
+      <h3 class="tempM">feels like: 0°C</h3>
+
+      <div class="details">
+        <div class="col">
+          <img src="assets/photos/humidity1.png" />
+          <div>
+            <p class="humidity">50%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="assets/photos/wind2.png" />
+          <div>
+            <p class="wind">15 km/h</p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="assets/photos/pressure.png" />
+          <div>
+            <p class="pressure">1004 hPa</p>
+            <p>Pressure</p>
+          </div>
+        </div>
+      </div>
+      <div class="futureForecast">
+        <div class="col2">
+          <div>
+            <p class="day1"></p>
+            <img class="icon1" src="assets/photos/clouds.png" />
+            <p class="futureTemp1">12°C</p>
+          </div>
+        </div>
+        <div class="col2">
+          <div>
+            <p class="day2"></p>
+            <img class="icon2" src="assets/photos/clouds.png" />
+            <p class="futureTemp2">12°C</p>
+          </div>
+        </div>
+        <div class="col2">
+          <div>
+            <p class="day3"></p>
+            <img class="icon3" src="assets/photos/clouds.png" />
+            <p class="futureTemp3">12°C</p>
+          </div>
+        </div>
+        <div class="col2">
+          <div>
+            <p class="day4"></p>
+            <img class="icon4" src="assets/photos/clouds.png" />
+            <p class="futureTemp4">12°C</p>
+          </div>
+        </div>
+        <div class="col2">
+          <div>
+            <p class="day5"></p>
+            <img class="icon5" src="assets/photos/clouds.png" />
+            <p class="futureTemp5">12°C</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/images.js" defer></script>
+    <script src="scripts/favorites.js" defer></script>
+  </body>
+</html>
